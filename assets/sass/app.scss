@@ -1,0 +1,94 @@
+@import "variables";
+@import "scaffolding";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+.kapcho-header {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  min-height: 480px;
+  background: url(/img/mainback.jpg) 50% 50%;
+  background-size: cover;
+  outline: 0;
+}
+
+#TA_cdsscrollingravewide774,
+#CDSSCROLLINGRAVE {
+  width: 100% !important;
+  height: 55px;
+  background: #ffffff;
+}
+
+.kapcho-info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 15;
+  border-bottom: 1px solid silver;
+}
+
+.social-links {
+  text-align: center;
+  margin-bottom: 5px;
+
+  a {
+    width: 32px;
+    height: 32px;
+    margin: 0 5px;
+
+    svg {
+      width: 48px;
+      height: 48px;
+      fill: white;
+      color: transparent;
+      border: 2px solid #ffffff;
+      background: rgba(0, 0, 0, 0.2);
+      .radius {
+        fill: currentColor;
+      }
+    }
+  }
+}
+
+.navbar {
+  padding: 20px;
+}
+
+.nav > li {
+  margin: 0 8px;
+  > a {
+    text-transform: uppercase;
+    &:hover, &:active {
+      border-bottom: 1px solid;
+    }
+  }
+}
+
+.navbar-phone {
+  float: right;
+  color: $navbar-default-link-color;
+  text-decoration: none;
+  &:hover, &:active {
+    color: $navbar-default-link-color;
+    text-decoration: none;
+    border-bottom: 1px solid;
+  }
+}
+
+.navbar-toggle {
+  float: left;
+  margin: 0;
+  padding: 3px 10px;
+}
+
+.navbar-icon-phone {
+  height: 23px;
+  width: 23px;
+
+  .icon-phone {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+  }
+}
