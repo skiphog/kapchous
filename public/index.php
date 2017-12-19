@@ -11,7 +11,7 @@
 <body>
 
 <header class="kapcho-header">
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top affix-top" data-spy="affix" data-offset-top="60">
         <div class="container">
 
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
@@ -41,6 +41,8 @@
 
         </div>
     </nav>
+
+    <img class="kapcho-logo img-responsive" src="/img/original.png" width="820" height="300" alt="Логотип Капчо">
 
     <div class="kapcho-info">
 
@@ -94,6 +96,21 @@
 
 <section class="container-fluid">
     <h2>Чо в Капчо?</h2>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet asperiores, dignissimos enim, error est ex id maiores molestiae officiis optio recusandae repellendus sequi soluta vel. Corporis quae quisquam tempore.</div>
+    <div>Ab dolor exercitationem facilis hic in numquam, quae repellat. Asperiores aspernatur cupiditate delectus doloribus illum ipsam, ipsum libero magnam, maxime obcaecati officia perferendis possimus quasi quidem quod rerum, saepe sed!</div>
+    <div>A accusantium earum explicabo fuga numquam perferendis quibusdam recusandae! Consectetur nihil, placeat. Ab amet consequatur ea earum enim, ex hic ipsam maiores nobis quos. Adipisci error fugiat iure sapiente unde.</div>
+    <div>Adipisci architecto cumque, deleniti, eius eligendi libero natus necessitatibus numquam, odit porro provident qui rerum saepe sint tempora tempore voluptatum. Architecto blanditiis dignissimos eligendi excepturi in possimus, repudiandae sequi voluptate?</div>
+    <div>Dolore fuga illo laudantium modi reiciendis totam. Animi, doloremque est facilis hic labore obcaecati perspiciatis porro recusandae sint totam. Enim id minima nostrum perspiciatis? Ad, neque, rerum. Aliquid, consequuntur, officia?</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto atque aut cupiditate delectus, distinctio dolorem, ea eius est facere laboriosam molestias nemo neque nobis quasi sint temporibus vitae voluptatem.</div>
+    <div>Ad adipisci autem dignissimos distinctio doloremque est illo inventore laudantium, minus nobis, nostrum possimus quisquam reiciendis rem sapiente sit temporibus veritatis vero. Animi corporis eligendi, laboriosam officia perferendis quam ut!</div>
+    <div>Accusantium debitis dolores hic in officia quis rerum! Est maiores minima modi repellendus. Architecto deleniti dolorem error harum hic ipsa itaque, modi nostrum odit, quis rem soluta temporibus vel velit!</div>
+    <div>Ad adipisci aliquid amet consequatur corporis dignissimos dolorum eligendi est excepturi illum ipsa maiores necessitatibus, neque officia provident quae quaerat quo quos saepe tenetur. Dignissimos dolor dolores earum obcaecati reprehenderit!</div>
+    <div>Adipisci aliquam architecto blanditiis, delectus dicta earum et excepturi exercitationem fuga hic, id inventore iste laudantium magni minima modi neque nostrum praesentium quae, quia quod rem reprehenderit saepe veniam vero.</div>
+    <div>Aliquam animi commodi deserunt dicta doloremque dolores, ea eius eligendi illo incidunt laboriosam laborum maxime natus nesciunt nostrum officia porro quo quos rem sequi similique sunt tempora temporibus totam vitae.</div>
+    <div>Ab amet aperiam aspernatur aut commodi deleniti dolorum earum esse, facilis harum impedit in ipsam maiores maxime neque nihil, odio officia possimus quo tempora, tempore ut vel velit. Alias, excepturi!</div>
+    <div>Amet, aperiam cum eaque hic nisi quia velit? Aut esse ipsam nulla perspiciatis, quae sint ut! Commodi delectus error ipsa saepe suscipit voluptatibus! Corporis culpa facere odio officiis omnis tenetur.</div>
+    <div>Aliquam aliquid, aut autem culpa, deserunt dicta earum eius facere magni minus nisi nobis perspiciatis quia quod rem sit ullam unde veritatis voluptate voluptatum! Aliquid cumque laboriosam molestiae mollitia perferendis.</div>
+    <div>A alias assumenda, beatae commodi delectus distinctio eius enim explicabo, fuga fugit impedit itaque iure labore laborum nam non nostrum omnis porro provident quaerat quasi quis quisquam sed sit voluptate!</div>
 </section>
 
 <script src="/js/app.js"></script>
