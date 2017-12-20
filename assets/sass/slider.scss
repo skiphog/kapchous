@@ -1,0 +1,55 @@
+.gallery {
+
+  &-item {
+    padding: 0 4px;
+    outline: none;
+    cursor: pointer;
+    display: none;
+  }
+
+  img {
+    @media (max-width: $screen-sm) {
+      height: 300px;
+      min-height: 300px;
+    }
+    @media (max-width: $screen-xs) {
+      height: 220px;
+      min-height: 220px;
+    }
+  }
+}
+
+.slick-arrow {
+  width: 55px;
+  height: 55px;
+  border: none;
+  cursor: pointer;
+  opacity: .5;
+  -webkit-transition: opacity .2s ease-out;
+  transition: opacity .2s ease-out;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  margin-top: -28px;
+  font-size: 0;
+  outline: none;
+  @media (max-width: $screen-xs) {
+    display: none;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &.slick-prev {
+    left: 30px;
+    background: url(/img/left.png);
+    background-size: 100%;
+  }
+
+  &.slick-next {
+    right: 30px;
+    background: url(/img/right.png);
+    background-size: 100%;
+  }
+}

@@ -25,8 +25,8 @@
                 <ul class="nav navbar-nav">
                     <li><a href="#cho-v-kapcho">Чо в Капчо?</a></li>
                     <li><a href="#kapcho-gallery">Галерея</a></li>
-                    <li><a href="#">Меню</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#kapcho-eat">Меню</a></li>
+                    <li><a href="#kapcho-contacts">Контакты</a></li>
                     <li><a href="#">Заказать стол</a></li>
                 </ul>
             </div>
@@ -126,7 +126,78 @@
 
 </section>
 
+<section id="kapcho-eat" class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1 kap-section-text">
+            <div class="eat">
+                <div class="eat-header">
+                    <h2 class="eat-title">Еда и напитки</h2>
+                </div>
 
+                <div class="eat-content">
+
+                    <a class="eat-content-pdf" href="/api/eda.pdf" target="_blank" rel="noopener noreferrer">
+                        <div class="pdf-cover">Еда</div>
+                        <div class="download-text">Скачать PDF</div>
+                    </a>
+
+                    <a class="eat-content-pdf" href="/api/bar.pdf" target="_blank" rel="noopener noreferrer">
+                        <div class="pdf-cover">Бар</div>
+                        <div class="download-text">Скачать PDF</div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1 kapcho-eat-info">
+            Информация в меню не является публичной офертой.
+        </div>
+    </div>
+</section>
+
+<section id="kapcho-contacts" class="section-contacts text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 contacts">
+                <h2 class="contacts-title">Адрес и телефон</h2>
+                <hr class="kap-line-bottom">
+                <p>Екатеринбург, ул. Розы Люксембург, 8/10</p>
+                <p>Напишите нам: <a href="mailto:kapcho.ekb@gmail.com">kapcho.ekb@gmail.com</a></p>
+                <p>Телефон: <a href="tel:+79126119404">+7 912 611 94 04</a></p>
+                <p>Пишите нам WhatsApp</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="works-time">
+    <div class="container">
+        <div class="row contacts text-center">
+            <div class="col-sm-3">
+                <p>Пн - Чт</p>
+                <p>12:00 - 00:00</p>
+            </div>
+
+            <div class="col-sm-3">
+                <p>Пт</p>
+                <p>12:00 - 04:00</p>
+            </div>
+
+            <div class="col-sm-3">
+                <p>Сб</p>
+                <p>16:00 - 04:00</p>
+            </div>
+
+            <div class="col-sm-3">
+                <p>Вс</p>
+                <p>12:00 - 00:00</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <script src="/js/app.js"></script>
 <!--<script src="https://www.jscache.com/wejs?wtype=cdsscrollingravewide&amp;uniq=128&amp;locationId=12104938&amp;lang=ru&amp;border=false&amp;shadow=true&amp;display_version=2"></script>-->
