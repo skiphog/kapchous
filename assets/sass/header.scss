@@ -1,0 +1,187 @@
+.kapcho-header {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  min-height: 480px;
+  background: #000000 url(/img/mainback.jpg) 50% 50%;
+  background-size: cover;
+  outline: 0;
+  margin-bottom: 20px;
+}
+
+#TA_cdsscrollingravewide774,
+#CDSSCROLLINGRAVE {
+  width: 100% !important;
+  height: 55px;
+  background: #ffffff;
+}
+
+.kapcho-info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 15;
+  border-bottom: 1px solid silver;
+}
+
+.social-links {
+  text-align: center;
+  margin-bottom: 5px;
+
+  a {
+    width: 32px;
+    height: 32px;
+    margin: 0 5px;
+    &:hover {
+      text-decoration: none;
+    }
+
+    svg {
+      width: 48px;
+      height: 48px;
+      fill: white;
+      color: transparent;
+      border: 2px solid #ffffff;
+      background: rgba(0, 0, 0, 0.2);
+      .radius {
+        fill: currentColor;
+      }
+    }
+  }
+}
+
+.navbar {
+  padding: 20px;
+  margin: 0;
+  transition: all .4s;
+  &.affix {
+    background-color: #000000;
+  }
+}
+
+.nav > li {
+  margin: 0 8px;
+  > a {
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+
+    &:hover, &:active {
+      border-color: $navbar-default-link-color;
+    }
+  }
+}
+
+.navbar-phone {
+  float: right;
+  color: $navbar-default-link-color;
+  text-decoration: none;
+  &:hover, &:active {
+    color: $navbar-default-link-color;
+    text-decoration: none;
+  }
+  @media (min-width: $screen-lg-min) {
+    margin-right: 75px;
+  }
+
+}
+
+.navbar-toggle {
+  float: left;
+  margin: 0;
+  padding: 3px 10px;
+  z-index: 100;
+  transform: rotate(0);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+
+  .icon-bar {
+    transition: .25s ease-in-out;
+  }
+
+  &.opener .icon-bar {
+
+    &:nth-child(1) {
+      position: absolute;
+      top: 10px;
+      transform: rotate(135deg);
+    }
+
+    &:nth-child(2) {
+      opacity: 0;
+    }
+
+    &:nth-child(3) {
+      position: absolute;
+      top: 6px;
+      transform: rotate(-135deg);
+    }
+  }
+}
+
+.navbar-icon-phone {
+  height: 23px;
+  width: 23px;
+
+  .icon-phone {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+  }
+}
+
+.navbar-collapse {
+  box-shadow: none;
+}
+
+.kapcho-logo {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 60px;
+
+  @media (max-width: $screen-sm-min) {
+    width: 220px;
+  }
+}
+
+.navbar-nav {
+  position: absolute;
+  left: calc(50% - 280px);
+}
+
+.navbar-collapse.open-menu {
+  display: block;
+  overflow-y: auto;
+  ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 2em;
+    background: rgba(0, 0, 0, 0.97);
+  }
+}
+
+.TA_cdsscrollingravewide {
+  width: 100%;
+  span.cls::before {
+    content: "1";
+    visibility: hidden;
+  }
+  > div {
+    padding: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 4px 0 #b7b7b7;
+    > div {
+      border-right: 1px solid #b7b7b7;
+      padding-right: 12px;
+      float: left;
+    }
+  }
+}

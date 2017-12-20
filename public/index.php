@@ -11,7 +11,7 @@
 <body>
 
 <header class="kapcho-header">
-    <nav class="navbar navbar-default navbar-fixed-top affix-top" data-spy="affix" data-offset-top="60">
+    <nav class="navbar navbar-default navbar-fixed-top affix-top" data-spy="affix" data-offset-top="30">
         <div class="container">
 
             <button id="navbar-button" type="button" class="navbar-toggle">
@@ -23,8 +23,8 @@
             <div class="navbar-collapse collapse" id="navbar">
 
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Чо в Капчо?</a></li>
-                    <li><a href="#">Галерея</a></li>
+                    <li><a href="#cho-v-kapcho">Чо в Капчо?</a></li>
+                    <li><a href="#kapcho-gallery">Галерея</a></li>
                     <li><a href="#">Меню</a></li>
                     <li><a href="#">Контакты</a></li>
                     <li><a href="#">Заказать стол</a></li>
@@ -78,40 +78,57 @@
                     </svg>
             </a>
         </div>
+
         <div id="TA_cdsscrollingravewide128" class="TA_cdsscrollingravewide">
-            <ul id="fUM76WJ" class="TA_links WhRkbPFf">
-                <li id="PpRn9Ms" class="nq2hFmZyOnO5">
-                    <a target="_blank"
-                            href="https://www.tripadvisor.ru/Restaurant_Review-g298540-d12104938-Reviews-Kapcho_Bar-Yekaterinburg_Sverdlovsk_Oblast_Urals_District.html">
-                        <img src="https://static.tacdn.com/img2/t4b/Stacked_TA_logo.png" alt="TripAdvisor"
-                                class="widEXCIMG" id="CDSWIDEXCLOGO"/>
+            <span class="cls"></span>
+            <div id="CDSSCROLLINGRAVE" class="white shadow wide">
+                <div class="rightBorder">
+                    <a target="_blank" href="https://www.tripadvisor.ru/">
+                        <img src="/img/Stacked_TA_logo.png" width="62" height="38" alt="Адвизоа">
                     </a>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
-        <script src="https://www.jscache.com/wejs?wtype=cdsscrollingravewide&amp;uniq=128&amp;locationId=12104938&amp;lang=ru&amp;border=false&amp;shadow=true&amp;display_version=2"></script>
+
     </div>
 </header>
 
-<section class="container-fluid">
-    <h2>Чо в Капчо?</h2>
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet asperiores, dignissimos enim, error est ex id maiores molestiae officiis optio recusandae repellendus sequi soluta vel. Corporis quae quisquam tempore.</div>
-    <div>Ab dolor exercitationem facilis hic in numquam, quae repellat. Asperiores aspernatur cupiditate delectus doloribus illum ipsam, ipsum libero magnam, maxime obcaecati officia perferendis possimus quasi quidem quod rerum, saepe sed!</div>
-    <div>A accusantium earum explicabo fuga numquam perferendis quibusdam recusandae! Consectetur nihil, placeat. Ab amet consequatur ea earum enim, ex hic ipsam maiores nobis quos. Adipisci error fugiat iure sapiente unde.</div>
-    <div>Adipisci architecto cumque, deleniti, eius eligendi libero natus necessitatibus numquam, odit porro provident qui rerum saepe sint tempora tempore voluptatum. Architecto blanditiis dignissimos eligendi excepturi in possimus, repudiandae sequi voluptate?</div>
-    <div>Dolore fuga illo laudantium modi reiciendis totam. Animi, doloremque est facilis hic labore obcaecati perspiciatis porro recusandae sint totam. Enim id minima nostrum perspiciatis? Ad, neque, rerum. Aliquid, consequuntur, officia?</div>
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto atque aut cupiditate delectus, distinctio dolorem, ea eius est facere laboriosam molestias nemo neque nobis quasi sint temporibus vitae voluptatem.</div>
-    <div>Ad adipisci autem dignissimos distinctio doloremque est illo inventore laudantium, minus nobis, nostrum possimus quisquam reiciendis rem sapiente sit temporibus veritatis vero. Animi corporis eligendi, laboriosam officia perferendis quam ut!</div>
-    <div>Accusantium debitis dolores hic in officia quis rerum! Est maiores minima modi repellendus. Architecto deleniti dolorem error harum hic ipsa itaque, modi nostrum odit, quis rem soluta temporibus vel velit!</div>
-    <div>Ad adipisci aliquid amet consequatur corporis dignissimos dolorum eligendi est excepturi illum ipsa maiores necessitatibus, neque officia provident quae quaerat quo quos saepe tenetur. Dignissimos dolor dolores earum obcaecati reprehenderit!</div>
-    <div>Adipisci aliquam architecto blanditiis, delectus dicta earum et excepturi exercitationem fuga hic, id inventore iste laudantium magni minima modi neque nostrum praesentium quae, quia quod rem reprehenderit saepe veniam vero.</div>
-    <div>Aliquam animi commodi deserunt dicta doloremque dolores, ea eius eligendi illo incidunt laboriosam laborum maxime natus nesciunt nostrum officia porro quo quos rem sequi similique sunt tempora temporibus totam vitae.</div>
-    <div>Ab amet aperiam aspernatur aut commodi deleniti dolorum earum esse, facilis harum impedit in ipsam maiores maxime neque nihil, odio officia possimus quo tempora, tempore ut vel velit. Alias, excepturi!</div>
-    <div>Amet, aperiam cum eaque hic nisi quia velit? Aut esse ipsam nulla perspiciatis, quae sint ut! Commodi delectus error ipsa saepe suscipit voluptatibus! Corporis culpa facere odio officiis omnis tenetur.</div>
-    <div>Aliquam aliquid, aut autem culpa, deserunt dicta earum eius facere magni minus nisi nobis perspiciatis quia quod rem sit ullam unde veritatis voluptate voluptatum! Aliquid cumque laboriosam molestiae mollitia perferendis.</div>
-    <div>A alias assumenda, beatae commodi delectus distinctio eius enim explicabo, fuga fugit impedit itaque iure labore laborum nam non nostrum omnis porro provident quaerat quasi quis quisquam sed sit voluptate!</div>
+<section id="cho-v-kapcho" class="container">
+
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2 kap-section-text">
+            <h2 class="text-center">Чо в Капчо?</h2>
+            <hr class="kap-line-bottom">
+            <p>
+                Самое главное в нашем баре - коптильня. В ней готовим брискет, рёбрышки BBQ, тар-тар, севиче и даже десерты.
+                За кухню отвечает Василий Червенко. За баром - совладельцы Никита Игнатьев и Константин Туйков.
+                В карте доброе вино, гастрономичный крафт, нескучный крепыш и домашние настойки.
+                В репертуаре дегустации, BBQ вечеринки и всегда под хорошую музыку.
+            </p>
+        </div>
+    </div>
+
 </section>
 
+<section id="kapcho-gallery">
+
+    <div class="gallery">
+        <div class="gallery-item"><img src="/img/bar/1.jpg"></div>
+        <div class="gallery-item"><img src="/img/bar/2.jpg"></div>
+        <div class="gallery-item"><img src="/img/bar/3.jpg"></div>
+        <div class="gallery-item"><img src="/img/bar/4.jpg"></div>
+        <div class="gallery-item"><img src="/img/bar/5.jpg"></div>
+        <div class="gallery-item"><img src="/img/bar/6.jpg"></div>
+        <div class="gallery-item"><img src="/img/bar/7.jpg"></div>
+        <div class="gallery-item"><img src="/img/bar/8.jpg"></div>
+        <div class="gallery-item"><img src="/img/bar/9.jpg"></div>
+    </div>
+
+</section>
+
+
+
 <script src="/js/app.js"></script>
+<!--<script src="https://www.jscache.com/wejs?wtype=cdsscrollingravewide&amp;uniq=128&amp;locationId=12104938&amp;lang=ru&amp;border=false&amp;shadow=true&amp;display_version=2"></script>-->
 </body>
 </html>
