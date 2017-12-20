@@ -15,13 +15,10 @@
         <div class="container">
 
             <button id="navbar-button" type="button" class="navbar-toggle">
-                <span class="sr-only">Кнопка меню</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-
-
 
             <div class="navbar-collapse collapse" id="navbar">
 
