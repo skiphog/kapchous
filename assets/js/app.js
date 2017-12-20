@@ -3,3 +3,7 @@ try {
 
   require('bootstrap-sass');
 } catch (e) {}
+
+$('#navbar-button').on('click', function () {
+  $(this).toggleClass('opener').next().toggleClass('open-menu');
+});
