@@ -199,7 +199,18 @@
     </div>
 </section>
 
+<section>
+
+    <div class="map-container">
+        <div class="loader loader-default"></div>
+        <div id="map-google" data-point="56.83449998,60.61172628" data-mapstyle="" data-mapzoom="17"
+                data-icon="/img/cho_map.png;48,64;24,32;0,0;12,32"></div>
+    </div>
+
+</section>
+
 <script src="/js/app.js"></script>
 <!--<script src="https://www.jscache.com/wejs?wtype=cdsscrollingravewide&amp;uniq=128&amp;locationId=12104938&amp;lang=ru&amp;border=false&amp;shadow=true&amp;display_version=2"></script>-->
+<!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyBQczVEHYVtk0-Y4XeWgvf52hEvM_xLU9o&amp;language=ru"></script>-->
 </body>
 </html>
