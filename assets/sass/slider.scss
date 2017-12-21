@@ -33,8 +33,8 @@
   margin-top: -28px;
   font-size: 0;
   outline: none;
-  @media (max-width: $screen-xs) {
-    display: none;
+  @media (max-width: $screen-sm) {
+    display: none !important;
   }
 
   &:hover {
