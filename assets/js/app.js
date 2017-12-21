@@ -2,6 +2,7 @@ try {
   window.$ = window.jQuery = require('jquery');
   require('bootstrap-sass');
   require('slick-carousel');
+  //require('./bootstrap-formhelpers');
 } catch (e) {
   console.error('Fuck yeah');
 }
@@ -295,7 +296,7 @@ $('.map-container').one('touchstart dragstart click', function () {
 
 $('body').scrollspy({
   target: '.navbar-fixed-top',
-  offset: 60,
+  offset: 75,
 });
 
 jQuery.easing['jswing'] = jQuery.easing['swing'];
@@ -319,5 +320,49 @@ $('a.page-scroll').bind('click', function (e) {
   $('html, body').stop().animate({
     scrollTop: $(that.attr('href')).offset().top - 60,
   }, 1000, 'easeInOutExpo');
+});
+
+const contact = $('#contact_dialog');
+
+contact.on('submit', '#contact_form', function (e) {
+  e.preventDefault();
+  const form = $(this);
+
+  $.ajax({
+    url: form.attr('action'),
+    type: 'POST',
+    dataType: 'json',
+    data: form.serialize(),
+    beforeSend: function () {
+      $('.form-group').removeClass('has-error');
+    },
+    success: function (data) {
+      if (data.status && data.status === 'OK') {
+        contact.
+          find('.modal-title').
+          html('Заказ принят').
+          parent().
+          next().
+          html('Спасибо за заказ! Наш менеджер свяжется с Вами в ближайшее время');
+
+        $('#submitForm').remove();
+      }
+    },
+    error: function (jqXHR) {
+      if (jqXHR.status === 422) {
+        const err = jqXHR.responseJSON.error;
+        for (let i = 0, count = err.length; i < count; i++) {
+          $('input[name=' + err[i] + ']').
+            parents('.form-group').
+            addClass('has-error');
+        }
+      }
+    },
+  });
+  e.preventDefault();
+});
+
+$('#submitForm').on('click', function () {
+  $('#contact_form').submit();
 });
 

@@ -27,7 +27,7 @@
                     <li><a class="page-scroll" href="#kapcho-gallery">Галерея</a></li>
                     <li><a class="page-scroll" href="#kapcho-eat">Меню</a></li>
                     <li><a class="page-scroll" href="#kapcho-contacts">Контакты</a></li>
-                    <li><a>Заказать стол</a></li>
+                    <li><a data-toggle="modal" data-target="#contact_dialog">Заказать стол</a></li>
                 </ul>
             </div>
 
@@ -93,6 +93,16 @@
     </div>
 </header>
 
+<section>
+    <h1 class="visually-hidden">Капчо бар</h1>
+    <video class="page-video" controls>
+        <source src='/video/kap.webm' type='video/webm; codecs="vp8.0, vorbis"'/>
+        <source src='/video/kap.ogv' type='video/ogg; codecs="theora, vorbis"'/>
+        <source src='/video/kap.mp4' type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'/>
+    </video>
+
+</section>
+
 <section id="cho-v-kapcho" class="container">
 
     <div class="row">
@@ -111,17 +121,17 @@
 </section>
 
 <section id="kapcho-gallery">
-
+    <h2 class="visually-hidden">Вкусная копченая еда</h2>
     <div class="gallery">
-        <div class="gallery-item"><img src="/img/bar/1.jpg"></div>
-        <div class="gallery-item"><img src="/img/bar/2.jpg"></div>
-        <div class="gallery-item"><img src="/img/bar/3.jpg"></div>
-        <div class="gallery-item"><img src="/img/bar/4.jpg"></div>
-        <div class="gallery-item"><img src="/img/bar/5.jpg"></div>
-        <div class="gallery-item"><img src="/img/bar/6.jpg"></div>
-        <div class="gallery-item"><img src="/img/bar/7.jpg"></div>
-        <div class="gallery-item"><img src="/img/bar/8.jpg"></div>
-        <div class="gallery-item"><img src="/img/bar/9.jpg"></div>
+        <div class="gallery-item"><img src="/img/bar/1.jpg" alt="Вкусная еда"></div>
+        <div class="gallery-item"><img src="/img/bar/2.jpg" alt="Вкусная еда"></div>
+        <div class="gallery-item"><img src="/img/bar/3.jpg" alt="Вкусная еда"></div>
+        <div class="gallery-item"><img src="/img/bar/4.jpg" alt="Вкусная еда"></div>
+        <div class="gallery-item"><img src="/img/bar/5.jpg" alt="Вкусная еда"></div>
+        <div class="gallery-item"><img src="/img/bar/6.jpg" alt="Вкусная еда"></div>
+        <div class="gallery-item"><img src="/img/bar/7.jpg" alt="Вкусная еда"></div>
+        <div class="gallery-item"><img src="/img/bar/8.jpg" alt="Вкусная еда"></div>
+        <div class="gallery-item"><img src="/img/bar/9.jpg" alt="Вкусная еда"></div>
     </div>
 
 </section>
@@ -174,6 +184,7 @@
 </section>
 
 <section class="works-time">
+    <h2 class="visually-hidden">Время работы</h2>
     <div class="container">
         <div class="row contacts text-center">
             <div class="col-sm-3">
@@ -201,6 +212,8 @@
 
 <section>
 
+    <h2 class="visually-hidden">Карта для проезда</h2>
+
     <div class="map-container">
         <div class="loader loader-default"></div>
         <div id="map-google" data-point="56.83449998,60.61172628" data-mapstyle="" data-mapzoom="17"
@@ -215,10 +228,10 @@
             <div class="col-sm-4 copyright">© Все права защищены</div>
             <div class="footer-icons col-sm-4">
                 <a href="https://www.facebook.com/kapchobar" title="Facebook" target="_blank" class="kap-block-footer-ico">
-                    <svg id="Capa_1" style="enable-background:new 0 0 112.196 112.196;" version="1.1" viewBox="0 0 112.196 112.196" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                    <svg id="Capa_2" style="enable-background:new 0 0 112.196 112.196;" version="1.1" viewBox="0 0 112.196 112.196" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
                         <g>
-                            <circle cx="56.098" cy="56.098" r="56.098" class="radius" />
-                            <path class="logo" d="M70.201,58.294h-10.01v36.672H45.025V58.294h-7.213V45.406h7.213v-8.34   c0-5.964,2.833-15.303,15.301-15.303L71.56,21.81v12.51h-8.151c-1.337,0-3.217,0.668-3.217,3.513v7.585h11.334L70.201,58.294z" />
+                            <circle cx="56.098" cy="56.098" r="56.098" class="radius"/>
+                            <path class="logo" d="M70.201,58.294h-10.01v36.672H45.025V58.294h-7.213V45.406h7.213v-8.34   c0-5.964,2.833-15.303,15.301-15.303L71.56,21.81v12.51h-8.151c-1.337,0-3.217,0.668-3.217,3.513v7.585h11.334L70.201,58.294z"/>
                         </g>
                     </svg>
                 </a>
@@ -249,7 +262,109 @@
     </div>
 </footer>
 
+<div class="modal fade" id="contact_dialog" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Заказ столика</h4>
+            </div>
+            <div class="modal-body">
+                <form id="contact_form" class="" method="post" action="/book.php">
+
+                    <div class="form-group">
+                        <label class="cols-sm-2 control-label">Имя *</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="name" type="text" class="form-control" placeholder="Ваше имя"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="cols-sm-2 control-label">Дата *</label>
+                        <div class="cols-sm-10">
+                            <div data-name="date" data-type="text"
+                                    class="bfh-datepicker cols-sm-10" data-min="today"
+                                    data-format="d/m/y">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="cols-sm-2 control-label">Время *</label>
+                        <div class="cols-sm-10">
+                            <div data-name="time" data-type="text"
+                                    class="bfh-timepicker cols-sm-10">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="cols-sm-2 control-label">Число гостей *</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-cutlery"></i></span>
+                                <input name="guests" type="number" class="form-control" min="1" max="99" value="1">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="cols-sm-2 control-label">Что-то ещё?</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-question-sign"></i></span>
+                                <textarea name="message" class="form-control" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="cols-sm-2 control-label">Телефон *</label>
+                        <div class="cols-sm-10">
+                            <input data-name="phone" name="phone" type="text"
+                                    class="bfh-phone cols-sm-10 form-control"
+                                    data-format="+7 (ddd) ddd-dd-dd">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="cols-sm-2 control-label">Имейл *</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <input name="email" type="email" class="form-control" placeholder="Ваш Email">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <input type="checkbox" name="rules" id="rules">
+                            <div class="btn-group w100">
+                                <label for="rules" class="btn btn-default check-z">
+                                    <span class="glyphicon glyphicon-check"></span>
+                                    <span class="glyphicon glyphicon-unchecked"></span>
+                                    <span class="content">С правилами обработки персональных данных согласен</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Поля обозначеные " * " - обязательны для заполнения</p>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="submitForm" class="btn btn-default">Заказать столик</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="/js/app.js"></script>
-<!--<script src="https://www.jscache.com/wejs?wtype=cdsscrollingravewide&amp;uniq=128&amp;locationId=12104938&amp;lang=ru&amp;border=false&amp;shadow=true&amp;display_version=2"></script>-->
+<script src="/js/bootstrap-formhelpers.js"></script>
+<script src="https://www.jscache.com/wejs?wtype=cdsscrollingravewide&amp;uniq=128&amp;locationId=12104938&amp;lang=ru&amp;border=false&amp;shadow=true&amp;display_version=2"></script>
 </body>
 </html>

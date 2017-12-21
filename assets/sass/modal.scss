@@ -1,0 +1,15 @@
+[data-toggle="modal"] {
+  cursor: pointer;
+}
+
+.modal {
+  @media (min-width: $screen-sm) {
+    margin-right: -20px;
+  }
+}
+
+.has-error .check-z {
+  color: #a94442 !important;
+  background-color: #f2dede !important;
+  border-color: #a94442 !important;
+}

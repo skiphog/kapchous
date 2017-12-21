@@ -24,3 +24,9 @@
 html, body {
   height: 100%;
 }
+
+//Ебанутый костыль от ебанутого модального окна, что бы не дергался
+body {
+  padding-right: 0 !important;
+  overflow-y: scroll !important;
+}
