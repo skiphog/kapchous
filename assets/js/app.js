@@ -2,7 +2,6 @@ try {
   window.$ = window.jQuery = require('jquery');
   require('bootstrap-sass');
   require('slick-carousel');
-  //require('./bootstrap-formhelpers');
 } catch (e) {
   console.error('Fuck yeah');
 }
@@ -280,7 +279,7 @@ $('.map-container').one('touchstart dragstart click', function () {
   that.off('touchstart dragstart click');
   that.children('.loader').addClass('is-active');
   loadScript(
-    'https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBQczVEHYVtk0-Y4XeWgvf52hEvM_xLU9o&language=ru',
+    `https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBQczVEHYVtk0-Y4XeWgvf52hEvM_xLU9o&language=${document.documentElement.lang}`,
     function () {
       const t = that.children('#map-google');
       makeMap(
@@ -338,12 +337,14 @@ contact.on('submit', '#contact_form', function (e) {
     },
     success: function (data) {
       if (data.status && data.status === 'OK') {
+        const title = contact.data('success-title');
+        const text = contact.data('success-text');
         contact.
           find('.modal-title').
-          html('Заказ принят').
+          html(title).
           parent().
           next().
-          html('Спасибо за заказ! Наш менеджер свяжется с Вами в ближайшее время');
+          html(text);
 
         $('#submitForm').remove();
       }

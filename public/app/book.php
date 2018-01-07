@@ -10,7 +10,6 @@ if (empty($_SERVER['HTTP_X_REQUESTED_WITH']) || strtolower($_SERVER['HTTP_X_REQU
     die;
 }
 
-
 $validate = [
     'name'   => function ($data) {
         return !empty($data);
@@ -66,18 +65,14 @@ foreach ($_POST as $k => $v) {
 $headers = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 
-
 /**
  * Если письмо не удалось отправить, то так же показываем ошибку
  */
-
-/*
 if (!mail('tequi11az@mail.ru', 'Заявка с сайта ' . $_SERVER['HTTP_HOST'], $message, $headers)) {
     http_response_code(422);
     echo json_encode(['error' => ['email' => 'Ошибка при отправке письма']], JSON_UNESCAPED_UNICODE);
     die;
 }
-*/
 
 /**
  * Если все хорошо, то показываем ответ об успешном отправке письма

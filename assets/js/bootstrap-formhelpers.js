@@ -20,7 +20,7 @@ if (!jQuery) { throw new Error("Bootstrap Form Helpers requires jQuery"); }
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+ * See the License for the specific app governing permissions and
  * limitations under the License.
  * ========================================================== */
  
@@ -283,7 +283,7 @@ var BFHCountriesList = {
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+ * See the License for the specific app governing permissions and
  * limitations under the License.
  * ========================================================== */
  
@@ -464,36 +464,27 @@ var BFHCurrenciesList = {
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+ * See the License for the specific app governing permissions and
  * limitations under the License.
  * ========================================================== */
+
+var BFHMLang = document.documentElement.lang;
+
+
+var MonthsListCapcho = {
+  ru: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+  en: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+};
  
-var BFHMonthsList = [
-  'Январь',
-  'Февраль',
-  'Март',
-  'Апрель',
-  'Май',
-  'Июнь',
-  'Июль',
-  'Август',
-  'Сентябрь',
-  'Октябрь',
-  'Ноябрь',
-  'Декабрь'
-];
+var DaysListCapcho = {
+  ru: ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'],
+  en: ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']
+};
+
+var BFHMonthsList = MonthsListCapcho[BFHMLang] || MonthsListCapcho.ru;
+var BFHDaysList = DaysListCapcho[BFHMLang] || DaysListCapcho.ru;
  
-var BFHDaysList = [
-  'ВС',
-  'ПН',
-  'ВТ',
-  'СР',
-  'ЧТ',
-  'ПТ',
-  'СБ'
-];
- 
-var BFHDayOfWeekStart = 1;
+var BFHDayOfWeekStart = +(BFHMLang !== 'en');
 
 /* ==========================================================
  * bootstrap-formhelpers-fonts.en_US.js
@@ -510,7 +501,7 @@ var BFHDayOfWeekStart = 1;
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+ * See the License for the specific app governing permissions and
  * limitations under the License.
  * ========================================================== */
  
@@ -578,7 +569,7 @@ var BFHFontsList = {
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+ * See the License for the specific app governing permissions and
  * limitations under the License.
  * ========================================================== */
  
@@ -614,7 +605,7 @@ var BFHFontSizesList = {
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+ * See the License for the specific app governing permissions and
  * limitations under the License.
  * ========================================================== */
 
@@ -7675,7 +7666,7 @@ var BFHGoogleFontsList = {
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+ * See the License for the specific app governing permissions and
  * limitations under the License.
  * ========================================================== */
  
@@ -7880,7 +7871,7 @@ var BFHLanguagesList = {
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either edpress or implied.
- * See the License for the specific language governing permissions and
+ * See the License for the specific app governing permissions and
  * limitations under the License.
  * ========================================================== */
  
@@ -8140,7 +8131,7 @@ var BFHPhoneFormatList = {
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+ * See the License for the specific app governing permissions and
  * limitations under the License.
  * ========================================================== */
 
@@ -12923,7 +12914,7 @@ var BFHStatesList = {
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+ * See the License for the specific app governing permissions and
  * limitations under the License.
  * ========================================================== */
  
@@ -12948,7 +12939,7 @@ var BFHTimePickerModes = {
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+ * See the License for the specific app governing permissions and
  * limitations under the License.
  * ========================================================== */
  
@@ -13785,7 +13776,7 @@ var BFHTimezonesList = {
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+ * See the License for the specific app governing permissions and
  * limitations under the License.
  * ========================================================== */
  
@@ -14131,7 +14122,7 @@ var BFHTimezonesList = {
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+ * See the License for the specific app governing permissions and
  * limitations under the License.
  * ========================================================== */
 
@@ -14338,7 +14329,7 @@ var BFHTimezonesList = {
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+ * See the License for the specific app governing permissions and
  * limitations under the License.
  * ========================================================== */
 
@@ -14555,7 +14546,7 @@ var BFHTimezonesList = {
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+ * See the License for the specific app governing permissions and
  * limitations under the License.
  * ========================================================== */
 
@@ -15141,7 +15132,7 @@ var BFHTimezonesList = {
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+ * See the License for the specific app governing permissions and
  * limitations under the License.
  * ========================================================== */
 
@@ -15324,7 +15315,7 @@ var BFHTimezonesList = {
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+ * See the License for the specific app governing permissions and
  * limitations under the License.
  * ========================================================== */
 
@@ -15507,7 +15498,7 @@ var BFHTimezonesList = {
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+ * See the License for the specific app governing permissions and
  * limitations under the License.
  * ========================================================== */
 
@@ -15712,7 +15703,7 @@ var BFHTimezonesList = {
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+ * See the License for the specific app governing permissions and
  * limitations under the License.
  * ========================================================== */
 
@@ -15942,7 +15933,7 @@ var BFHTimezonesList = {
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+ * See the License for the specific app governing permissions and
  * limitations under the License.
  * ========================================================== */
 
@@ -16243,7 +16234,7 @@ var BFHTimezonesList = {
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+ * See the License for the specific app governing permissions and
  * limitations under the License.
  * ========================================================== */
 
@@ -16512,7 +16503,7 @@ var BFHTimezonesList = {
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+ * See the License for the specific app governing permissions and
  * limitations under the License.
  * ========================================================== */
 
@@ -16860,7 +16851,7 @@ var BFHTimezonesList = {
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+ * See the License for the specific app governing permissions and
  * limitations under the License.
  * ========================================================== */
 
@@ -17081,7 +17072,7 @@ var BFHTimezonesList = {
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+ * See the License for the specific app governing permissions and
  * limitations under the License.
  * ========================================================== */
 
@@ -17327,7 +17318,7 @@ var BFHTimezonesList = {
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+ * See the License for the specific app governing permissions and
  * limitations under the License.
  * ========================================================== */
 
@@ -17721,7 +17712,7 @@ var BFHTimezonesList = {
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+ * See the License for the specific app governing permissions and
  * limitations under the License.
  * ========================================================== */
 

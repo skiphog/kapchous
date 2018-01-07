@@ -2,8 +2,16 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  background: #ffffff url('/img/map1.jpg') no-repeat center center;
   background-size: cover;
+  background: #ffffff no-repeat center center;
+
+  &.ru {
+    background-image: url(/img/map1.jpg);
+  }
+
+  &.en{
+    background-image: url(/img/map2.jpg);
+  }
 
   @media (max-width: $screen-sm) {
     height: 300px;
