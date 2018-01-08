@@ -31,6 +31,12 @@
                 </ul>
             </div>
 
+            <div class="navbar-language">
+                <label for="select-language"><?php echo html($content['lang']); ?></label>
+                <input type="checkbox" id="select-language">
+                <a href="/app/cookie.php?lang=<?php echo html($content['prev']); ?>"><?php echo html($content['prev']); ?></a>
+            </div>
+
             <a class="navbar-phone" href="tel:+79126119404">
                 <span class="hidden-xs hidden-sm">+7 912 611 94 04</span>
                 <div class="navbar-icon-phone visible-xs-block visible-sm-block">
@@ -340,9 +346,7 @@
 
 <script src="/js/app.js"></script>
 <script src="/js/bootstrap-formhelpers.js"></script>
-<!--
 <script src="https://www.jscache.com/wejs?wtype=cdsscrollingravewide&amp;uniq=128&amp;locationId=12104938&amp;lang=<?php echo html($content['lang']); ?>&amp;border=false&amp;shadow=true&amp;display_version=2"></script>
--->
 </body>
 </html>
 

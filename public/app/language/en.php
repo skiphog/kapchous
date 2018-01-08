@@ -9,6 +9,11 @@ return [
     'lang' => 'en',
 
     /**
+     * Язык переключения
+     */
+    'prev' => 'ru',
+
+    /**
      * Описание сайта (METATEG)
      */
     'description' => 'The coolest bar in the world is Capcho!',
@@ -16,7 +21,7 @@ return [
     /**
      * Название сайта (TITLE)
      */
-    'title' => 'CAPCCH? BAR',
+    'title' => 'CAPCHO? BAR',
 
     /**
      * Меню для сайта
