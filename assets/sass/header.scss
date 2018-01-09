@@ -103,7 +103,7 @@
   input{
     display: none;
     &[type="checkbox"]:checked + a {
-      display: inline-block;
+      display: inline;
     }
   }
 
