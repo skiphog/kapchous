@@ -14,20 +14,20 @@ return [
     'prev' => 'ru',
 
     /**
-     * Описание сайта (METATEG)
+     * Описание сайта (METATAG)
      */
-    'description' => 'The coolest bar in the world is Capcho!',
+    'description' => 'The coolest bar in the world is KAPCHO!',
 
     /**
      * Название сайта (TITLE)
      */
-    'title' => 'CAPCHO? BAR',
+    'title' => 'KAPCHO? BAR',
 
     /**
      * Меню для сайта
      */
     'menu' => [
-        'cho-v-kapcho'    => 'What Capcho?',
+        'cho-v-kapcho'    => 'About Us?',
         'kapcho-gallery'  => 'Gallery',
         'kapcho-eat'      => 'Menu',
         'kapcho-contacts' => 'Contacts'
@@ -36,28 +36,28 @@ return [
     /**
      * Заказ стола (Элемент в меню. Вызывает модальное окно с формой)
      */
-    'contact_dialog' => 'Order a table',
+    'contact_dialog' => 'Reserve a table',
 
     /**
      * Картинка логотип
      */
     'kapcho-logo' => [
         'path' => '/img/english.png',
-        'alt'  => 'Logo Capcho'
+        'alt'  => 'KAPCHO LOGO'
     ],
 
     /**
      * Заголовок h1
      * Он не виден на странице, но нужен для поисковиков
      */
-    'h1' => 'Capcho bar',
+    'h1' => 'KAPCHO BAR',
 
     /**
      * 1. Че в капчо
      */
     'cho-v-kapcho' => [
-        'h2'      => 'What in Capcho?',
-        'content' => 'The most important thing in our bar is a smokehouse. In it we prepare a basketball, ribs BBQ, tar-tar, ceviche and even desserts. Vasily Chervenko is in charge of the kitchen. Behind the bar are co-owners Nikita Ignatiev and Konstantin Tuykov. In the map is a good wine, a gastronomic craft, a boring fast-pound and home-made tinctures. In the repertoire of tasting, BBQ parties and always under good music.'
+        'h2'      => 'About Us',
+        'content' => 'Smoke BBQ kitchen is the main idea of our bar. Here we make all the specialties – brisket, holy BBQ ribs, tar-tar, ceviche and even desserts. Chef cuisine - Vasilyi Chervenko. Behind a bar – owners Nikita Ignatev and Konstantin Tuikov. What to drink? Soft-hearted wine, gastronomic craft and inspiring homemade drinks. Have tasted our smoke cherry bourbon? Every week – degustations, BBQ parties and always with a good music.'
     ],
 
     /**
@@ -85,7 +85,7 @@ return [
         'h2' => 'Food and drink',
         'eat-content' => [
             ['title' => 'Food', 'link' => '/api/eda.pdf', 'text' => 'Download PDF'],
-            ['title' => 'Food', 'link' => '/api/bar.pdf', 'text' => 'Download PDF']
+            ['title' => 'Bar', 'link' => '/api/bar.pdf', 'text' => 'Download PDF']
         ],
         'notice' => 'Information in the menu is not a public offer.'
     ],
@@ -95,9 +95,9 @@ return [
      */
     'kapcho-contacts' => [
         'h2'      => 'Address and telephone number',
-        'address' => 'Ekaterinburg, Rosa Luxemburg, 8/10',
+        'address' => 'Ekaterinburg, Rozy Luxembourg 8/10',
         'mail'    => 'Contact Us',
-        'phone'   => 'Phone',
+        'phone'   => 'Phone number',
         'what'    => 'Write to us'
     ],
 
@@ -105,11 +105,11 @@ return [
      * 5. Время работы
      */
     'works-time' => [
-        'h2'   => 'Working hours',
+        'h2'   => 'We are open',
         'time' => [
-            ['days' => 'Mon - Thu', 'hours' => '12:00 - 00:00'],
-            ['days' => 'Fri', 'hours' => '12:00 - 04:00'],
-            ['days' => 'Sat', 'hours' => '16:00 - 04:00'],
+            ['days' => 'Mo - Th', 'hours' => '12:00 - 00:00'],
+            ['days' => 'Fr', 'hours' => '12:00 - 04:00'],
+            ['days' => 'Sa', 'hours' => '16:00 - 04:00'],
             ['days' => 'Su', 'hours' => '12:00 - 00:00']
         ]
     ],
@@ -130,7 +130,7 @@ return [
      * 8. Форма для заказа стола
      */
     'form' => [
-        'title'    => 'Reservation',
+        'title'    => 'Reserve a table',
         'name'     => 'Your name',
         'date'     => 'Date',
         'time'     => 'Time',
@@ -139,9 +139,9 @@ return [
         'phone'    => 'Phone',
         'email'    => 'Email',
 
-        'rules'    => 'With the rules for processing personal data agree',
-        'required' => 'fields are required',
-        'submit'   => 'Order a table',
+        'rules'    => 'I agree to processing of my personal data',
+        'required' => 'Fields are required',
+        'submit'   => 'Reserve a table',
 
         'success'  => [
             'title' => 'Order is accepted',
