@@ -207,7 +207,7 @@
 }
 
 .navbar-collapse.open-menu {
-  display: initial;
+  display: table;
   overflow-y: auto;
   ul {
     position: fixed;

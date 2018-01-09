@@ -68,7 +68,7 @@ $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 /**
  * Если письмо не удалось отправить, то так же показываем ошибку
  */
-if (!mail('tequi11az@mail.ru', 'Заявка с сайта ' . $_SERVER['HTTP_HOST'], $message, $headers)) {
+if (!mail('test@mail.ru, test@gmail.com', 'Заявка с сайта ' . $_SERVER['HTTP_HOST'], $message, $headers)) {
     http_response_code(422);
     echo json_encode(['error' => ['email' => 'Ошибка при отправке письма']], JSON_UNESCAPED_UNICODE);
     die;
