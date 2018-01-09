@@ -93,16 +93,29 @@
   color: $navbar-default-link-color;
   text-transform: uppercase;
   user-select: none;
+  width: 60px;
+  overflow: hidden;
 
   label{
+    display: inline;
     margin: 0;
     font-weight: normal;
     cursor: pointer;
   }
 
-  input{
-    display: none;
-    &[type="checkbox"]:checked + a {
+  input[type="checkbox"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+    &:checked + a {
       display: inline;
     }
   }
@@ -194,7 +207,7 @@
 }
 
 .navbar-collapse.open-menu {
-  display: block;
+  display: initial;
   overflow-y: auto;
   ul {
     position: fixed;
